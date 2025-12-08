@@ -1,5 +1,5 @@
 <template>
-	<div>Main page in ~/pages</div>
+    <div>Page</div>
 </template>
 
 <script setup lang="ts"></script>
