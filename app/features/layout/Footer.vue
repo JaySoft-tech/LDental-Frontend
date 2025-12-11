@@ -7,7 +7,7 @@
             <div
                 class="text-white text-[10px] md:text-[12px] font-unbounded font-light leading-[100%] text-center md:text-left md:ml-[100px]"
             >
-                © 2025 L-Dental. Всі права захищені
+                © {{ currentYear }} L-Dental. Всі права захищені
             </div>
 
             <!-- Privacy Policy Link -->
@@ -21,6 +21,8 @@
     </footer>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const currentYear = new Date().getFullYear();
+</script>
 
 <style scoped></style>
