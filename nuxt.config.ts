@@ -9,6 +9,15 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
     ],
 
+    runtimeConfig: {
+        public: {
+            api:
+                process.env.NUXT_PUBLIC_STRAPI_URL ||
+                'http://localhost:1337/api',
+            token: process.env.NUXT_PUBLIC_STRAPI_TOKEN || '',
+        },
+    },
+
     app: {
         head: {
             link: [
@@ -21,4 +30,10 @@ export default defineNuxtConfig({
     },
 
     css: ['~/assets/css/main.css'],
+
+    router: {
+        options: {
+            scrollBehaviorType: 'smooth',
+        },
+    },
 });

@@ -169,4 +169,26 @@ const toggleAccordion = (index: number) => {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+/* Accordion Animation */
+.accordion-enter-active,
+.accordion-leave-active {
+    transition: all 0.3s ease;
+}
+
+.accordion-enter-from {
+    opacity: 0;
+    max-height: 0;
+}
+
+.accordion-leave-to {
+    opacity: 0;
+    max-height: 0;
+}
+
+.accordion-enter-to,
+.accordion-leave-from {
+    opacity: 1;
+    max-height: 2000px;
+}
+</style>
