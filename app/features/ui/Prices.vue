@@ -1,5 +1,6 @@
 <template>
     <section
+        id="prices"
         class="w-full bg-white py-40 lg:py-[100px] px-[10px] lg:px-[100px]"
     >
         <div class="w-full max-w-[370px] lg:max-w-[1240px] mx-auto">

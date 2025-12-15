@@ -1,6 +1,6 @@
 <template>
     <header
-        class="w-full absolute top-0 left-0 z-50 bg-gradient-to-b from-black to-black/30 via-black/100/50"
+        class="w-full fixed top-0 left-0 z-50 bg-gradient-to-b from-black to-black/30 via-black/100/50"
     >
         <div
             class="w-full h-[70px] mx-auto border-b border-white/25 rounded-b-15 flex items-center justify-between px-20 lg:px-60 transition-all"

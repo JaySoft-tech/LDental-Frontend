@@ -1,5 +1,6 @@
 <template>
     <section
+        id="services"
         class="w-full h-auto lg:h-[558px] relative bg-cover bg-center transition-all"
         style="
             background-image: url('/bg-services.png');

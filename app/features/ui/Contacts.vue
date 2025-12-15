@@ -1,5 +1,6 @@
 <template>
     <section
+        id="contacts"
         class="w-full bg-white pb-40 lg:pb-[106px] px-[10px] lg:px-[100px]"
     >
         <div class="w-full max-w-[390px] lg:max-w-[1240px] mx-auto">
