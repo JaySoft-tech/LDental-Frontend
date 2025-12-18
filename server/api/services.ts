@@ -13,6 +13,7 @@ export default defineEventHandler(async (event) => {
                 Authorization: `Bearer ${config.public.token}`,
             },
         });
+        console.log('qwe', response);
 
         return response;
     } catch (err: any) {

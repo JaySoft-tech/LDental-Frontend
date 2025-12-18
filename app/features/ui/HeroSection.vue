@@ -7,16 +7,16 @@
             <img
                 src="/hero-bg.png"
                 alt="Dental"
-                class="w-full h-full object-cover object-center 3xl:object-top transition-all duration-500 ease-in-out"
+                class="w-full h-full object-cover object-top transition-all duration-500 ease-in-out"
             />
         </div>
 
         <!-- Mobile Background -->
         <div class="lg:hidden absolute inset-0">
             <img
-                src="/hero-bg.png"
+                src="/bg-hero-mobile.png"
                 alt="Dental"
-                class="w-full h-full object-cover object-center"
+                class="w-full h-full object-cover object-top"
             />
             <div
                 class="absolute inset-0 bg-gradient-to-t from-[#171516] to-transparent via-[#171516]/60"

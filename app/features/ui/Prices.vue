@@ -142,6 +142,7 @@ const toggleAccordion = (index: number) => {
 };
 
 const { data: categories, pending, error } = await useFetch('/api/services');
+console.log(categories.value);
 
 const sortedCategories = computed(() => {
     if (!categories.value?.data) return [];
