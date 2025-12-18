@@ -1,13 +1,13 @@
 <template>
     <section
-        class="relative w-full h-[747px] lg:h-[800px] 3xl:h-[1400px] overflow-hidden rounded-b-[25px]"
+        class="relative w-full h-[747px] lg:h-[800px] 2xl:h-[1100px] 3xl:h-[1400px] overflow-hidden rounded-b-[25px]"
     >
         <!-- Desktop Background -->
         <div class="hidden lg:block absolute inset-0">
             <img
                 src="/hero-bg.png"
                 alt="Dental"
-                class="w-full h-full object-cover object-center 3xl:object-top transition-all duration-500 ease-in-out"
+                class="w-full h-full object-cover object-[40%_center] 3xl:object-top 2xl:object-[30%_center] transition-all duration-500 ease-in-out"
             />
         </div>
 
@@ -16,10 +16,10 @@
             <img
                 src="/hero-bg.png"
                 alt="Dental"
-                class="w-full h-full object-cover object-center"
+                class="w-full h-full object-cover object-[45%_center]"
             />
             <div
-                class="absolute inset-0 bg-gradient-to-t from-[#171516] to-transparent via-[#171516]/60"
+                class="absolute inset-0 bg-gradient-to-t from-[#171516] to-transparent via-[#171516]/20"
             ></div>
         </div>
 
