@@ -29,13 +29,6 @@
                     <div
                         class="overflow-y-auto max-h-[85vh] py-40 md:py-60 px-20 md:px-70 hide-scrollbar"
                     >
-                        <!-- Title -->
-                        <h1
-                            class="text-black text-[16px] md:text-[20px] font-unbounded font-medium leading-[100%] tracking-[-0.03em] mb-30 md:mb-30"
-                        >
-                            Політика конфіденційності Desktop
-                        </h1>
-
                         <!-- Intro Text -->
                         <p
                             class="text-black text-[16px] font-unbounded font-light leading-[100%] tracking-[-0.03em] mb-30 md:mb-30"
@@ -53,7 +46,7 @@
                         <p
                             class="text-black text-[16px] font-unbounded font-light leading-[100%] tracking-[-0.03em] mb-30 md:mb-30"
                         >
-                            Адміністрація сайту openko-dental.clinic (далі Сайт)
+                            Адміністрація сайту openko-dental.clini (далі Сайт)
                             не може передати або розкрити інформацію, надану
                             користувачем (далі Користувач) при реєстрації і
                             використанні функцій сайту третім особам, крім
