@@ -54,22 +54,24 @@
                 v-if="isMenuOpen"
                 class="fixed inset-0 bg-white z-40 lg:hidden overflow-y-auto"
             >
-                <nav class="pt-[90px] px-30 pb-30">
-                    <div v-for="item in menuItems" :key="item.name">
-                        <a
-                            :href="item.link"
-                            @click="closeMenu"
-                            class="block text-primary-brown text-[24px] md:text-[32px] font-manrope font-semibold leading-[100%] mx-30 pt-20 pb-[10px]"
-                        >
-                            {{ item.name }}
-                        </a>
-                        <div
-                            class="max-w-full mx-30 h-px border-t border-primary-brown md:border-[1.5px]"
-                        ></div>
+                <nav class="pt-[90px] pb-30">
+                    <div class="max-w-[1020px] px-[20px] w-full mx-auto">
+                        <div v-for="item in menuItems" :key="item.name">
+                            <a
+                                :href="item.link"
+                                @click="closeMenu"
+                                class="block text-primary-brown text-[24px] md:text-[32px] font-manrope font-semibold leading-[100%] mx-30 pt-20 pb-[10px]"
+                            >
+                                {{ item.name }}
+                            </a>
+                            <div
+                                class="max-w-full mx-30 h-px border-t border-primary-brown md:border-[1.5px]"
+                            ></div>
+                        </div>
                     </div>
 
                     <!-- Mobile Menu Image -->
-                    <div class="mt-40 flex justify-center px-30">
+                    <div class="mt-40 flex justify-center">
                         <img
                             src="/dent.png"
                             alt="Dental"
