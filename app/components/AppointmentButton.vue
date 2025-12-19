@@ -15,7 +15,7 @@
             Записатися на прийом
         </span>
         <img
-            src="/arrow.svg"
+            :src="arrowSrc"
             alt="Arrow"
             class="w-6 h-6 flex-shrink-0 transition-transform group-hover:translate-x-1"
         />
@@ -34,6 +34,8 @@ const props = withDefaults(defineProps<Props>(), {
 const emit = defineEmits<{
     click: [];
 }>();
+
+const arrowSrc = '/arrow.svg';
 
 const sizeClasses = computed(() => {
     if (props.size === 'small') {

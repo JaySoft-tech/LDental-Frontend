@@ -65,7 +65,7 @@
                         class="block lg:hidden mt-[40px] w-full flex justify-center"
                     >
                         <img
-                            src="/dentt.png"
+                            :src="denttSrc"
                             alt="Dental"
                             class="w-[100%] h-auto object-contain"
                         />
@@ -76,7 +76,7 @@
                     class="hidden min-[1301px]:block absolute left-[30%] bottom-[-10%] -translate-x-1/2 z-20 pointer-events-none w-[450px] h-auto"
                 >
                     <img
-                        src="/dentt.png"
+                        :src="denttSrc"
                         alt="Dental"
                         class="w-[390px] h-[320px] lg:w-full lg:h-full object-contain drop-shadow-2xl"
                         style="transform-origin: bottom center"
@@ -101,25 +101,27 @@
 </template>
 
 <script setup lang="ts">
+const denttSrc = '/dentt.png';
+
 const contacts = [
     {
-        icon: '/Map.svg',
+        icon: '/map.svg',
         title: 'Адреса:',
         text: 'вулиця Коноплянська 22а, перший поверх',
     },
     {
-        icon: '/Time.svg',
+        icon: '/time.svg',
         title: 'Графік роботи:',
         text: '9:00 - 19:00 за попереднім записом',
     },
     {
-        icon: '/Tel.svg',
+        icon: '/tel.svg',
         title: 'Телефон:',
         text: '(050) 387-83-54',
         link: 'tel:+380503878354',
     },
     {
-        icon: '/Mail.svg',
+        icon: '/mail.svg',
         title: 'Електронна пошта:',
         text: 'dr.lohvinova@gmail.com',
         link: 'mailto:dr.lohvinova@gmail.com',

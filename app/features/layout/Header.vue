@@ -1,13 +1,18 @@
 <template>
-    <header
-        class="w-full fixed top-0 left-0 z-50 bg-gradient-to-b from-black to-black/30 via-black/100/50"
-    >
+    <header class="w-full fixed top-0 left-0 z-50">
         <div
-            class="w-full h-[70px] mx-auto border-b border-white/25 rounded-b-15 flex items-center justify-between px-20 lg:px-60 transition-all"
+            class="w-full h-[70px] mx-auto flex items-center justify-between px-20 lg:px-60 transition-all border border-white/25 rounded-b-15"
+            style="
+                background: linear-gradient(
+                    180deg,
+                    #000000 0%,
+                    rgba(0, 0, 0, 0) 116.43%
+                );
+            "
         >
             <!-- Logo -->
             <div class="flex items-center flex-shrink-0 z-50">
-                <img src="/logo.svg" alt="L-Dental" class="h-10" />
+                <img :src="logoSrc" alt="L-Dental" class="h-10" />
             </div>
 
             <!-- Desktop Navigation -->
@@ -35,13 +40,13 @@
             >
                 <img
                     v-if="!isMenuOpen"
-                    src="/Burger.svg"
+                    :src="burgerSrc"
                     alt="Menu"
                     class="w-8 h-8"
                 />
                 <img
                     v-else
-                    src="/Close.svg"
+                    :src="closeSrc"
                     alt="Close"
                     class="w-8 h-8 md:w-[42px] md:h-[42px]"
                 />
@@ -73,7 +78,7 @@
                     <!-- Mobile Menu Image -->
                     <div class="mt-40 flex justify-center">
                         <img
-                            src="/dent.png"
+                            :src="dentSrc"
                             alt="Dental"
                             class="w-full md:max-w-[800px] h-auto object-contain"
                         />
@@ -83,14 +88,19 @@
         </Transition>
 
         <!-- Call Modal -->
-        <CallModal :is-open="isCallModalOpen" @close="closeCallModal" />
+        <AppointmentModal :is-open="isCallModalOpen" @close="closeCallModal" />
     </header>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
 import CallButton from '~/components/Button.vue';
-import CallModal from '~/components/CallModal.vue';
+import AppointmentModal from '~/components/AppointmentModal.vue';
+
+const logoSrc = '/logo.svg';
+const burgerSrc = '/burger.svg';
+const closeSrc = '/close.svg';
+const dentSrc = '/dent.png';
 
 const menuItems = [
     { name: 'Головна', link: '#' },
@@ -131,14 +141,12 @@ const closeCallModal = () => {
 .nav-link {
     position: relative;
     display: inline-block;
-    padding-top: 25.5px;
-    padding-bottom: 25.5px;
 }
 
 .nav-link::after {
     content: '';
     position: absolute;
-    bottom: 24px;
+    bottom: -5px;
     left: 0;
     width: 0;
     height: 0.7px;

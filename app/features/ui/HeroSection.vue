@@ -5,7 +5,7 @@
         <!-- Desktop Background -->
         <div class="hidden lg:block absolute inset-0">
             <img
-                src="/hero-bg.png"
+                :src="heroBgSrc"
                 alt="Dental"
                 class="w-full h-full object-cover object-[40%_center] 3xl:object-top 2xl:object-[30%_center] transition-all duration-500 ease-in-out"
             />
@@ -14,7 +14,7 @@
         <!-- Mobile Background -->
         <div class="lg:hidden absolute inset-0">
             <img
-                src="/bg-hero-mobile.png"
+                :src="heroBgSrc"
                 alt="Dental"
                 class="w-full h-full object-cover object-[45%_center]"
             />
@@ -60,13 +60,15 @@
         </div>
     </section>
 
-    <AppointmentModal :is-open="isModalOpen" @close="isModalOpen = false" />
+    <CallModal :is-open="isModalOpen" @close="isModalOpen = false" />
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
 import AppointmentButton from '~/components/AppointmentButton.vue';
-import AppointmentModal from '~/components/AppointmentModal.vue';
+import CallModal from '~/components/CallModal.vue';
+
+const heroBgSrc = '/hero-bg.png';
 
 const isModalOpen = ref(false);
 

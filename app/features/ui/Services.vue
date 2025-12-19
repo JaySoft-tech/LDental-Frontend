@@ -2,10 +2,7 @@
     <section
         id="services"
         class="w-full h-auto lg:h-[558px] relative bg-cover bg-center transition-all"
-        style="
-            background-image: url('/bg-services.png');
-            background-color: rgba(187, 187, 187, 0.35);
-        "
+        :style="backgroundStyle"
     >
         <div
             class="w-full max-w-[1440px] mx-auto h-full flex flex-col items-center"
@@ -60,6 +57,13 @@
 </template>
 
 <script setup lang="ts">
+const bgServicesSrc = '/bg-services.png';
+
+const backgroundStyle = computed(() => ({
+    backgroundImage: `url('${bgServicesSrc}')`,
+    backgroundColor: 'rgba(187, 187, 187, 0.35)',
+}));
+
 const services = [
     { icon: '/icon-consulting.svg', title: 'Консультування' },
     { icon: '/icon-tooth-extraction.svg', title: 'Видалення зубів' },
