@@ -19,7 +19,7 @@
                         aria-label="Close"
                     >
                         <img
-                            src="/Close-modal-dark.svg"
+                            src="/close-modal-dark.svg"
                             alt="Close"
                             class="w-8 h-8"
                         />
@@ -36,7 +36,7 @@
                         <div
                             class="w-[54px] h-[54px] rounded-full bg-[#F0F0F0] flex items-center justify-center flex-shrink-0"
                         >
-                            <img src="/Tel.svg" alt="Phone" class="w-12 h-12" />
+                            <img src="/tel.svg" alt="Phone" class="w-12 h-12" />
                         </div>
 
                         <div>
@@ -60,7 +60,7 @@
                             class="w-[54px] h-[54px] rounded-full bg-[#F0F0F0] flex items-center justify-center flex-shrink-0"
                         >
                             <img
-                                src="/Mail.svg"
+                                src="/mail.svg"
                                 alt="Email"
                                 class="w-12 h-12"
                             />
@@ -87,7 +87,7 @@
                     class="hidden md:flex absolute top-0 right-0 w-10 h-10 items-center justify-center hover:opacity-80 transition-opacity z-10"
                     aria-label="Close"
                 >
-                    <img src="/Close-modal.svg" alt="Close" class="w-10 h-10" />
+                    <img src="/close-modal.svg" alt="Close" class="w-10 h-10" />
                 </button>
             </div>
         </div>

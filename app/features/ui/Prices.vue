@@ -48,7 +48,7 @@
                             {{ category.name }}
                         </h3>
                         <img
-                            src="/Arrow-down.svg"
+                            src="/arrow-down.svg"
                             alt="Arrow"
                             :class="[
                                 'w-[10px] lg:w-[14px] h-[10px] lg:h-[14px] transition-all duration-300',

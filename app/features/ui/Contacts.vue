@@ -103,23 +103,23 @@
 <script setup lang="ts">
 const contacts = [
     {
-        icon: '/Map.svg',
+        icon: '/map.svg',
         title: 'Адреса:',
         text: 'вулиця Коноплянська 22а, перший поверх',
     },
     {
-        icon: '/Time.svg',
+        icon: '/time.svg',
         title: 'Графік роботи:',
         text: '9:00 - 19:00 за попереднім записом',
     },
     {
-        icon: '/Tel.svg',
+        icon: '/tel.svg',
         title: 'Телефон:',
         text: '(050) 387-83-54',
         link: 'tel:+380503878354',
     },
     {
-        icon: '/Mail.svg',
+        icon: '/mail.svg',
         title: 'Електронна пошта:',
         text: 'dr.lohvinova@gmail.com',
         link: 'mailto:dr.lohvinova@gmail.com',

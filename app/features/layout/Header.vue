@@ -35,13 +35,13 @@
             >
                 <img
                     v-if="!isMenuOpen"
-                    src="/Burger.svg"
+                    src="/burger.svg"
                     alt="Menu"
                     class="w-8 h-8"
                 />
                 <img
                     v-else
-                    src="/Close.svg"
+                    src="/close.svg"
                     alt="Close"
                     class="w-8 h-8 md:w-[42px] md:h-[42px]"
                 />

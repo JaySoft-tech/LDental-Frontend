@@ -14,7 +14,7 @@
                     class="absolute top-0 right-0 w-10 h-10 flex items-center justify-center hover:opacity-80 transition-opacity z-10"
                     aria-label="Close"
                 >
-                    <img src="/Close-modal.svg" alt="Close" class="w-10 h-10" />
+                    <img src="/close-modal.svg" alt="Close" class="w-10 h-10" />
                 </button>
 
                 <!-- Modal Content Box -->
@@ -26,7 +26,7 @@
                     >
                         <!-- Phone Icon -->
                         <div class="flex items-center justify-center">
-                            <img src="/Tel.svg" alt="Phone" class="w-12 h-12" />
+                            <img src="/tel.svg" alt="Phone" class="w-12 h-12" />
                         </div>
 
                         <!-- Title -->

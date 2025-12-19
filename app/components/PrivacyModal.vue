@@ -19,7 +19,7 @@
                         aria-label="Close"
                     >
                         <img
-                            src="/Close-modal-dark.svg"
+                            src="/close-modal-dark.svg"
                             alt="Close"
                             class="w-6 h-6"
                         />

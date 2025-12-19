@@ -39,7 +39,7 @@
                     <!-- Feature 1 -->
                     <div class="flex flex-col items-start mb-[30px] w-full">
                         <img
-                            src="/Arrow-down.svg"
+                            src="/arrow-down.svg"
                             alt="Arrow"
                             class="w-[13px] h-[13px] mb-20 md:mb-[28px] xl:mb-[35px] transition-all"
                         />
@@ -56,7 +56,7 @@
                     <!-- Feature 2 -->
                     <div class="flex flex-col items-start mb-[30px] w-full">
                         <img
-                            src="/Arrow-down.svg"
+                            src="/arrow-down.svg"
                             alt="Arrow"
                             class="w-[13px] h-[13px] mb-20 md:mb-[28px] xl:mb-[35px] transition-all"
                         />
@@ -72,7 +72,7 @@
                     <!-- Feature 3 -->
                     <div class="flex flex-col items-start mb-40 xl:mb-0 w-full">
                         <img
-                            src="/Arrow-down.svg"
+                            src="/arrow-down.svg"
                             alt="Arrow"
                             class="w-[13px] h-[13px] mb-20 md:mb-[28px] xl:mb-[35px] transition-all"
                         />
