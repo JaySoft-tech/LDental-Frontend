@@ -31,7 +31,7 @@
                 >
                     <!-- Main Image -->
                     <img
-                        src="/foto-c.png"
+                        :src="fotoC"
                         alt="Dental Office"
                         class="w-full h-[227px] md:h-[280px] xl:h-[323px] rounded-15 object-cover mb-[48px] transition-all"
                     />
@@ -39,7 +39,7 @@
                     <!-- Feature 1 -->
                     <div class="flex flex-col items-start mb-[30px] w-full">
                         <img
-                            src="/arrow-down.svg"
+                            :src="arrowDown"
                             alt="Arrow"
                             class="w-[13px] h-[13px] mb-20 md:mb-[28px] xl:mb-[35px] transition-all"
                         />
@@ -56,7 +56,7 @@
                     <!-- Feature 2 -->
                     <div class="flex flex-col items-start mb-[30px] w-full">
                         <img
-                            src="/arrow-down.svg"
+                            :src="arrowDown"
                             alt="Arrow"
                             class="w-[13px] h-[13px] mb-20 md:mb-[28px] xl:mb-[35px] transition-all"
                         />
@@ -72,7 +72,7 @@
                     <!-- Feature 3 -->
                     <div class="flex flex-col items-start mb-40 xl:mb-0 w-full">
                         <img
-                            src="/arrow-down.svg"
+                            :src="arrowDown"
                             alt="Arrow"
                             class="w-[13px] h-[13px] mb-20 md:mb-[28px] xl:mb-[35px] transition-all"
                         />
@@ -93,7 +93,7 @@
                         class="absolute left-0 top-[323px] opacity-0 xl:opacity-100 transition-all duration-500"
                     >
                         <img
-                            src="/foto-l.png"
+                            :src="fotoL"
                             alt="Clinic"
                             class="w-[170px] h-[303px] rounded-15 object-cover"
                         />
@@ -104,7 +104,7 @@
                         class="absolute right-0 top-[323px] opacity-0 xl:opacity-100 transition-all duration-500"
                     >
                         <img
-                            src="/foto-r.png"
+                            :src="fotoR"
                             alt="Clinic Interior"
                             class="w-[227px] h-[303px] rounded-15 object-cover"
                         />
@@ -115,12 +115,12 @@
             <!-- Bottom Images - Visible below xl screens -->
             <div class="flex flex-col xl:hidden mt-0">
                 <img
-                    src="/foto-l.png"
+                    :src="fotoL"
                     alt="Clinic"
                     class="w-full h-[658px] md:h-[500px] rounded-15 object-cover mb-20 transition-all"
                 />
                 <img
-                    src="/foto-r.png"
+                    :src="fotoR"
                     alt="Clinic Interior"
                     class="w-full h-[494px] md:h-[400px] rounded-15 object-cover transition-all"
                 />
@@ -129,6 +129,11 @@
     </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const arrowDown = '/arrow-down.svg';
+const fotoC = '/foto-c.png';
+const fotoL = '/foto-l.png';
+const fotoR = '/foto-r.png';
+</script>
 
 <style scoped></style>
