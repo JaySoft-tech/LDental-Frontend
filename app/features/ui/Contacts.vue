@@ -65,7 +65,7 @@
                         class="block lg:hidden mt-[40px] w-full flex justify-center"
                     >
                         <img
-                            src="/dentt.png"
+                            :src="denttSrc"
                             alt="Dental"
                             class="w-[100%] h-auto object-contain"
                         />
@@ -76,7 +76,7 @@
                     class="hidden min-[1301px]:block absolute left-[30%] bottom-[-10%] -translate-x-1/2 z-20 pointer-events-none w-[450px] h-auto"
                 >
                     <img
-                        src="/dentt.png"
+                        :src="denttSrc"
                         alt="Dental"
                         class="w-[390px] h-[320px] lg:w-full lg:h-full object-contain drop-shadow-2xl"
                         style="transform-origin: bottom center"
@@ -101,6 +101,8 @@
 </template>
 
 <script setup lang="ts">
+const denttSrc = '/dentt.png';
+
 const contacts = [
     {
         icon: '/map.svg',

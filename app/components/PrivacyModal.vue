@@ -19,7 +19,7 @@
                         aria-label="Close"
                     >
                         <img
-                            src="/close-modal-dark.svg"
+                            :src="closeModalDarkSrc"
                             alt="Close"
                             class="w-6 h-6"
                         />
@@ -180,6 +180,8 @@ const props = defineProps<Props>();
 const emit = defineEmits<{
     close: [];
 }>();
+
+const closeModalDarkSrc = '/close-modal-dark.svg';
 
 const closeModal = () => {
     emit('close');

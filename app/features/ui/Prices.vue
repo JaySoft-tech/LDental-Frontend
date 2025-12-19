@@ -48,7 +48,7 @@
                             {{ category.name }}
                         </h3>
                         <img
-                            src="/arrow-down.svg"
+                            :src="arrowDownSrc"
                             alt="Arrow"
                             :class="[
                                 'w-[10px] lg:w-[14px] h-[10px] lg:h-[14px] transition-all duration-300',
@@ -130,6 +130,8 @@
 import EmptyState from '@/components/states/EmptyState.vue';
 import ErrorState from '@/components/states/ErrorState.vue';
 import LoadingState from '@/components/states/LoadingState.vue';
+
+const arrowDownSrc = '/arrow-down.svg';
 
 const openIndex = ref<number | null>(null);
 
