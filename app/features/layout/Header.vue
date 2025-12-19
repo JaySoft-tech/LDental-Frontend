@@ -7,7 +7,7 @@
         >
             <!-- Logo -->
             <div class="flex items-center flex-shrink-0 z-50">
-                <img src="/logo.svg" alt="L-Dental" class="h-10" />
+                <img :src="logoSrc" alt="L-Dental" class="h-10" />
             </div>
 
             <!-- Desktop Navigation -->
@@ -35,13 +35,13 @@
             >
                 <img
                     v-if="!isMenuOpen"
-                    src="/burger.svg"
+                    :src="burgerSrc"
                     alt="Menu"
                     class="w-8 h-8"
                 />
                 <img
                     v-else
-                    src="/close.svg"
+                    :src="closeSrc"
                     alt="Close"
                     class="w-8 h-8 md:w-[42px] md:h-[42px]"
                 />
@@ -71,7 +71,7 @@
                     <!-- Mobile Menu Image -->
                     <div class="mt-40 flex justify-center px-30">
                         <img
-                            src="/dent.png"
+                            :src="dentSrc"
                             alt="Dental"
                             class="w-full md:max-w-[800px] h-auto object-contain"
                         />
@@ -89,6 +89,11 @@
 import { ref } from 'vue';
 import CallButton from '~/components/Button.vue';
 import CallModal from '~/components/CallModal.vue';
+
+const logoSrc = '/logo.svg';
+const burgerSrc = '/burger.svg';
+const closeSrc = '/close.svg';
+const dentSrc = '/dent.png';
 
 const menuItems = [
     { name: 'Головна', link: '#' },
