@@ -1,7 +1,7 @@
 <template>
     <header class="w-full fixed top-0 left-0 z-50">
         <div
-            class="w-full h-[70px] mx-auto flex items-center justify-between px-20 lg:px-60 transition-all border border-white/25 rounded-b-15"
+            class="w-full h-[70px] mx-auto flex items-center justify-between px-20 lg:px-60 transition-all border border-t-0 border-white/25 rounded-b-15"
             style="
                 background: linear-gradient(
                     180deg,
