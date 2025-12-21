@@ -126,6 +126,12 @@ const contacts = [
         text: 'dr.lohvinova@gmail.com',
         link: 'mailto:dr.lohvinova@gmail.com',
     },
+    {
+        icon: '/instagram.png',
+        title: 'Інстаграм:',
+        text: 'l.dentalclinic',
+        link: 'https://www.instagram.com/l.dentalclinic',
+    },
 ];
 </script>
 
