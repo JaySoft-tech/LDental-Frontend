@@ -121,16 +121,16 @@ const contacts = [
         link: 'tel:+380503878354',
     },
     {
+        icon: '/instagram.png',
+        title: 'Instagram:',
+        text: 'l.dentalclinic',
+        link: 'https://www.instagram.com/l.dentalclinic',
+    },
+    {
         icon: '/mail.svg',
         title: 'Електронна пошта:',
         text: 'dr.lohvinova@gmail.com',
         link: 'mailto:dr.lohvinova@gmail.com',
-    },
-    {
-        icon: '/instagram.png',
-        title: 'Інстаграм:',
-        text: 'l.dentalclinic',
-        link: 'https://www.instagram.com/l.dentalclinic',
     },
 ];
 </script>
