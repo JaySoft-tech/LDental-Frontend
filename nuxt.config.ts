@@ -7,7 +7,9 @@ export default defineNuxtConfig({
         'pinia-plugin-persistedstate',
         '@nuxtjs/tailwindcss',
         '@vueuse/nuxt',
+        '@nuxtjs/seo',
     ],
+    css: ['~/assets/css/main.css'],
 
     runtimeConfig: {
         public: {
@@ -25,11 +27,97 @@ export default defineNuxtConfig({
                     rel: 'stylesheet',
                     href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Unbounded:wght@300;400;500;600;700&display=swap',
                 },
+                { rel: 'canonical', href: 'https://ldental.vercel.app' },
+                { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' },
             ],
+
+            titleTemplate: '%siteName - %title',
+            meta: [
+                { charset: 'utf-8' },
+                {
+                    name: 'viewport',
+                    content: 'width=device-width, initial-scale=1',
+                },
+                {
+                    name: 'keywords',
+                    content:
+                        'стоматологія Київ, професійна стоматологія, видалення зубів Київ, імплантація зубів, ортопедія зубів, L-Dental',
+                },
+                { name: 'author', content: 'L-Dental' },
+                { name: 'robots', content: 'index, follow' },
+                { name: 'geo.region', content: 'UA-KY' },
+                { name: 'geo.placename', content: 'Київ' },
+                { name: 'geo.position', content: '50.503;30.487' },
+            ],
+            htmlAttrs: { lang: 'uk' },
         },
     },
 
-    css: ['~/assets/css/main.css'],
+    site: {
+        url: 'https://ldental.vercel.app',
+        name: 'L-Dental - Професійна стоматологія в Києві',
+        description:
+            'Професійні стоматологічні послуги в Києві: консультації, лікування, імплантація, ортопедія. Комфорт, чесність та індивідуальний підхід для вашої посмішки.',
+        defaultLocale: 'uk',
+        indexable: true,
+    },
+
+    robots: {
+        allow: ['/'],
+        sitemap: '/sitemap.xml',
+    },
+
+    sitemap: {
+        sources: ['/', '/#about', '/#services', '/#prices', '/#contacts'],
+        defaults: {
+            lastmod: new Date().toISOString(),
+            priority: 0.9,
+            changefreq: 'weekly',
+        },
+        cacheMaxAgeSeconds: 3600,
+        autoI18n: false,
+    },
+
+    schemaOrg: {
+        identity: {
+            type: 'LocalBusiness',
+            name: 'L-Dental',
+            description:
+                'Стоматологічна клініка в Києві, що пропонує професійні послуги з лікування зубів.',
+            address: {
+                streetAddress: 'вулиця Коноплянська 22а',
+                addressLocality: 'Київ',
+                addressCountry: 'UA',
+                postalCode: '04201',
+            },
+            telephone: '+380503878354',
+            email: 'dr.lohvinova@gmail.com',
+            url: 'https://ldental.vercel.app',
+            openingHoursSpecification: [
+                {
+                    dayOfWeek: [
+                        'Monday',
+                        'Tuesday',
+                        'Wednesday',
+                        'Thursday',
+                        'Friday',
+                    ],
+                    opens: '09:00',
+                    closes: '19:00',
+                },
+            ],
+            image: '/logo.svg',
+        },
+    },
+
+    ogImage: {
+        defaults: {
+            url: '/foto-c.png',
+            width: 527,
+            height: 323,
+            alt: 'L-Dental - Стоматологія в Києві',
+        },
+    },
 
     router: {
         options: {
