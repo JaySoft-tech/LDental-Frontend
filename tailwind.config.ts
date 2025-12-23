@@ -4,6 +4,7 @@ export default <Partial<Config>>{
     theme: {
         extend: {
             screens: {
+                xl: '1500px',
                 '2xl': '1920px',
                 '3xl': '2560px',
             },

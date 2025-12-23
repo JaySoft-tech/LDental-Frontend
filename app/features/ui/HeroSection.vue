@@ -1,13 +1,13 @@
 <template>
     <section
-        class="relative w-full h-[747px] lg:h-[800px] 2xl:h-[1100px] 3xl:h-[1400px] overflow-hidden rounded-b-[25px]"
+        class="relative w-full h-[747px] lg:h-[800px] xl:h-[980px] 3xl:h-[1400px] overflow-hidden rounded-b-[25px]"
     >
         <!-- Desktop Background -->
         <div class="hidden lg:block absolute inset-0">
             <img
                 :src="heroBgSrc"
                 alt="Dental"
-                class="w-full h-full object-cover object-[40%_center] 3xl:object-top 2xl:object-[30%_center] transition-all duration-500 ease-in-out"
+                class="w-full h-full object-cover object-[40%_center] xl:object-top 3xl:object-top transition-all duration-500 ease-in-out"
             />
         </div>
 
