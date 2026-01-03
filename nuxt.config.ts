@@ -110,15 +110,6 @@ export default defineNuxtConfig({
         },
     },
 
-    ogImage: {
-        defaults: {
-            url: '/foto-c.png',
-            width: 527,
-            height: 323,
-            alt: 'L-Dental - Стоматологія в Києві',
-        },
-    },
-
     router: {
         options: {
             scrollBehaviorType: 'smooth',
