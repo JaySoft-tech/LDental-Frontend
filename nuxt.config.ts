@@ -7,7 +7,9 @@ export default defineNuxtConfig({
         'pinia-plugin-persistedstate',
         '@nuxtjs/tailwindcss',
         '@vueuse/nuxt',
-        '@nuxtjs/seo',
+        '@nuxtjs/robots',
+        'nuxt-schema-org',
+        '@nuxtjs/sitemap',
     ],
     css: ['~/assets/css/main.css'],
 
@@ -108,10 +110,6 @@ export default defineNuxtConfig({
             ],
             image: '/logo.svg',
         },
-    },
-
-    ogImage: {
-        enabled: false,
     },
 
     router: {
