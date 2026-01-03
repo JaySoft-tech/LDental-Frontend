@@ -110,6 +110,10 @@ export default defineNuxtConfig({
         },
     },
 
+    ogImage: {
+        enabled: false,
+    },
+
     router: {
         options: {
             scrollBehaviorType: 'smooth',
