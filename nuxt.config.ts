@@ -47,6 +47,10 @@ export default defineNuxtConfig({
                 },
                 { name: 'author', content: 'L-Dental' },
                 { name: 'robots', content: 'index, follow' },
+                {
+                    name: 'google-site-verification',
+                    content: '1t_JI2mrmG2lrCSvbdx8eNE1_OSu-FuOTKwVnrU_un0',
+                },
                 { name: 'geo.region', content: 'UA-KY' },
                 { name: 'geo.placename', content: 'Київ' },
                 { name: 'geo.position', content: '50.503;30.487' },
