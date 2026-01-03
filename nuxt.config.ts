@@ -29,7 +29,7 @@ export default defineNuxtConfig({
                     rel: 'stylesheet',
                     href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Unbounded:wght@300;400;500;600;700&display=swap',
                 },
-                { rel: 'canonical', href: 'https://ldental.vercel.app' },
+                { rel: 'canonical', href: 'https://l-dental.com' },
                 { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' },
             ],
 
@@ -60,7 +60,7 @@ export default defineNuxtConfig({
     },
 
     site: {
-        url: 'https://ldental.vercel.app',
+        url: 'https://l-dental.com',
         name: 'L-Dental - Професійна стоматологія в Києві',
         description:
             'Професійні стоматологічні послуги в Києві: консультації, лікування, імплантація, ортопедія. Комфорт, чесність та індивідуальний підхід для вашої посмішки.',
@@ -98,7 +98,7 @@ export default defineNuxtConfig({
             },
             telephone: '+380503878354',
             email: 'dr.lohvinova@gmail.com',
-            url: 'https://ldental.vercel.app',
+            url: 'https://l-dental.com',
             openingHoursSpecification: [
                 {
                     dayOfWeek: [

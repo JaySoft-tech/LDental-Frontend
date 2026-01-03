@@ -38,7 +38,7 @@ useHead({
                 'Індивідуальні плани лікування, сучасні технології та безболісні процедури в центрі Києва.',
         },
         { property: 'og:image', content: '/foto-c.png' },
-        { property: 'og:url', content: 'https://l-dental.com.ua/' },
+        { property: 'og:url', content: 'https://l-dental.com' },
         { name: 'twitter:card', content: 'summary_large_image' },
         {
             name: 'twitter:title',
