@@ -130,6 +130,7 @@
 import EmptyState from '@/components/states/EmptyState.vue';
 import ErrorState from '@/components/states/ErrorState.vue';
 import LoadingState from '@/components/states/LoadingState.vue';
+import { servicesData } from '@/data/services';
 
 const arrowDownSrc = '/arrow-down.svg';
 
@@ -143,12 +144,13 @@ const toggleAccordion = (index: number) => {
     }
 };
 
-const { data: categories, pending, error } = await useFetch('/api/services');
-console.log(categories.value);
+// Static data usage
+const categories = ref(servicesData);
+const pending = false;
+const error = null;
 
 const sortedCategories = computed(() => {
     if (!categories.value?.data) return [];
-
     return [...categories.value.data].sort((a: any, b: any) => {
         const orderA = a?.order ?? 0;
         const orderB = b?.order ?? 0;
@@ -166,9 +168,7 @@ const sortedItems = (items: any[]) => {
 
 const extractDescription = (description: any): string => {
     if (!description) return '';
-
     if (typeof description === 'string') return description;
-
     if (Array.isArray(description)) {
         return description
             .map((block: any) => {
@@ -182,7 +182,6 @@ const extractDescription = (description: any): string => {
             .filter(Boolean)
             .join(' ');
     }
-
     return '';
 };
 </script>
@@ -190,7 +189,9 @@ const extractDescription = (description: any): string => {
 <style scoped>
 .accordion-enter-active,
 .accordion-leave-active {
-    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+    transition:
+        max-height 0.4s ease-in-out,
+        opacity 0.3s ease-in-out;
 }
 
 .accordion-enter-from,
