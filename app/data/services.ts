@@ -762,7 +762,7 @@ export const servicesData = {
                 },
                 {
                     id: 4009,
-                    documentId: 'custom-ther-9',
+                    documentId: 'custom-ther2-9',
                     name: 'Інші призначення',
                     Price: '1 000 грн',
                     description: null,
